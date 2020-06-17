@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .bd{
+        border: orange solid 1px;
+    }
+
+
+/*    以下为页眉导航栏的样式*/
+    header{
+        width: 100%;
+        display: flex;
+        display: -webkit-flex; /* Safari兼容性 */
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        order: 0;
+    }
+    header>div{
+        border: black solid 2px;
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+    }
+    .head_l{
+        order: 1;
+    }
+    .head_mid{
+        order: 2;
+    }
+    .head_r{
+        order: 3;
+    }
+    .hs{
+        flex-grow: 1;
+        height: 50px;
+    }
+    .hb{
+        flex-grow: 2;
+        height: 120px;
+    }
+
+
+/*   以下为横幅样式 */
+    .banner{
+        display: flex;
+        width: 100%;
+        height: 250px;
+        flex-flow: column nowrap;
+        order: 1;
+    }
+    .ban_top{
+        align-self: center;
+        width: 50%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+    }
+    .ban_top>input {
+        align-self: center;
+    }
+    .ban_top>span{
+        align-self: center;
+    }
+    .ban_bot{
+        display: flex;
+        width: 100%;
+        flex-grow: row nowrap;
+        border: 1px solid black;
+        align-items: center;
+        align-self: center;
+        }
+    .ban_bot>div{
+        flex-grow: 1;
+        display: flex;
+        height: 125px;
+        justify-content: center;
+        align-items: center;
+        border: red 1px solid;
+    }
+/*    以下为内容样式*/
+    .content{
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .content_1{
+        display: flex;
+        width: 80%;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .content_1>div{
+        height: 600px;
+        flex-grow: 1;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        border: green solid 1px;
+    }
+    .content_2{
+        height: 600px;
+        width: 90%;    
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont_le{
+        flex-grow: 2;
+        align-self: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .cont_le>div{
+        width: 50%;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+    }
+    .cont_ri{
+        flex-grow: 1;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+/*    以下为页脚样式*/
+    footer{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        order: 10;
+    }
+    .foot_l{
+        position: absolute;
+        left:0px;
+        margin: 0px 0px 0px 150px;
+    }
+    .foot_l>div{
+        width: 300px;
+        min-width: 300px;
+        height: 50px;
+        min-height: 50p;
+        margin: 10px 0px;
+        border: black solid 1px;
+    }
+    .foot_r{
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        height: 200px;
+        text-align: left;
+        margin: 0px 200px 0px 0px;
+        border: black solid 1px;
+    }
+</style>
+</head>
+
+<body>
+<header class="bd">
+    <div class="head_l hs">首页</div>
+    <div class="head_l hs">游戏</div>
+    <div class="head_l hs">下载/购买</div>
+    <div class="head_mid hb">网站名称/logo</div>
+    <div class="head_r hs">新闻</div>
+    <div class="head_r hs">社区</div>
+    <div class="head_r hs">登陆/注册</div>
+</header>
+<div class="banner bd">
+    <div class="ban_top">
+        <input type="text">
+        <span>搜索</span>
+    </div>
+    <div class="ban_bot">
+        <div>类别</div>
+        <div>类别</div>
+        <div>类别</div>
+        <div>类别</div>
+        <div>类别</div>
+    </div>
+</div>
+
+
+<div class="content bd">
+    <div class="content_1">
+        <!-- 轮播图 -->
+        <div>游戏1</div>
+        <div>游戏2</div>
+        <div>游戏3</div>
+    </div>
+    <div class="content_2">
+        <div class="cont_le bd">
+            <div>其他游戏</div>
+            <div>其他游戏</div>
+            <div>其他游戏</div>
+            <div>其他游戏</div>
+        </div>
+        <div class="cont_ri bd">文字推荐/社区新闻</div>
+    </div>
+</div>
+
+<footer class="bd">
+        <div class="foot_l">
+            <div>客服</div>
+            <div>反馈</div>
+            <div>关于</div>
+    </div>
+        <div class="foot_r">版权信息</div>
+    </footer>
+</body>
+</html>
