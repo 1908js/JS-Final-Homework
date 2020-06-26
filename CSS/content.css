@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/*    以下为内容样式*/
+    .content{
+        order: 2;
+        width: 100%;
+        min-width: 1900px;
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .content_1{
+        position: relative;
+    }
+
+    .content_2{
+        height: 600px;
+        width: 90%;    
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont_le{
+        flex-grow: 2;
+        max-width: 1110px;
+        align-self: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .cont_le>div{
+        width: 550px;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+    }
+    .cont_ri{
+        flex-grow: 1;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }

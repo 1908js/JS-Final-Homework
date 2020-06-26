@@ -54,6 +54,7 @@
         overflow: hidden;
         position: relative;
 
+
     }
     .carousel .img{
         /**/
@@ -68,6 +69,7 @@
         width: calc(95% - 14px);
         height: calc(95% - 14px);
         margin: 7px;
+        
     }
 
     .carousel .img1{

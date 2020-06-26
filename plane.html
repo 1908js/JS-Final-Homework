@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞机大战</title>
+<link rel="stylesheet" href="css/背景色.css">
+<link href="css/foot.css" rel="stylesheet" type="text/css">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        white-space: nowrap;
+        font-family: icomoon;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    header{
+        position: relative;
+        top: 0;
+        background-color: rgba(183,172,172,0.60);
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        min-width: 1903px;
+        height: 120px;
+    }
+    header>*{
+        flex-grow: 1;
+        height: 120px;
+        margin: 0px 10px;
+        background-color: rgba(183,172,172,1.00);
+        text-align: center;
+        line-height: 120px;
+    }
+    #h1{
+        border-radius: 0 0 20px 20px;
+        margin: 0px;
+    }
+    #h1,#h2{
+        background-color: rgba(62,124,208,0.60);
+    }
+    #h1:hover,#h2:hover{
+        background-color: rgba(183,172,172,1.00);
+    }
+    #h3:hover,#h4:hover,#h5:hover{
+        background-color: rgba(62,124,208,0.60);
+    }
+    #h5{
+        margin: 0;
+    }
+    header>div{
+        display: flex;
+        transition: all 0.4s ease 0s;
+    }
+    header>div>a{
+        flex-grow: 1;
+        color: black;
+    }
+    header>input{
+        flex-grow: 2.5;
+        outline: none;
+        font-size: 32px;
+        border-radius: 30px 0 0 30px;
+        height: 80px;
+        position: relative;
+        top: 20px;
+        border-right: none;
+        margin-right: 0;
+        border: rgba(62,124,208,0.60) solid 1px;
+        transition: all 0.4s ease 0s;
+    }
+    input:hover{
+        border: rgba(62,124,208,1.00) solid 1px;
+        background-color: rgba(255,255,255,0.56);
+        border-right: none;
+        margin-right: 0;
+    }
+    button{
+        max-width: 150px;
+        height: 82px;
+        font-size: 32px;
+        line-height: 82px;
+        position: relative;
+        top: 20px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0 30px 30px 0;
+        outline: none;
+        background-color: rgba(62,124,208,1.00);
+        transition: all 0.4s ease 0s;
+    }
+    button:hover{
+        cursor: pointer;
+        border: rgba(62,124,208,0.60) solid 1px;
+        background-color:  rgba(62,124,208,0.60);
+        border-right: none;
+        margin-left: 0;
+    }
+/*    以下为内容样式*/
+    .content{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        min-width: 1903px;
+    }
+    .content>div{
+        height: 780px;
+    }
+    .content1{
+        flex-grow: 1;
+        margin: 0 10px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+    }
+    .content2{
+        width: 1024px;
+        max-width: 1050px;
+        min-width: 1024x;
+        background-color: black;
+        margin:0 10px; 
+    }
+    .content3{
+        flex-grow: 1;
+        margin: 0 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div id="h1"><a href="index.html">回到首页</a></div>
+    <input type="text" class="serch" value="搜索框">
+    <button>搜索</button>
+    <div id="h2"><a href="#">游戏</a></div>
+    <div id="h3"><a href="#">新闻</a></div>
+    <div id="h4"><a href="#">社区</a></div>
+    <div id="h5"><a href="#">登录</a></div>
+</header>
+<div class="content">
+    <div class="content1">
+        背景图1
+    </div>
+    <div class="content2" style="text-align: center;line-height: 720px;">游戏画面</div>
+    <div class="content3">
+        背景图2
+    </div>
+</div>
+<footer>
+    <div class="foot_l">
+        <a href="#"><div>客服</div></a>
+        <a href="#"><div>反馈</div></a>
+        <a href="#"><div>关于</div></a>
+    </div>
+    <div class="foot_r">
+        <table width="200px" height="100px">
+            <tr>
+                <td rowspan="4">网络1908</td>
+                <td>27谭奕潇</td>
+            </tr>
+            <tr>
+                <td>06李宗逸</td>
+            </tr>
+            <tr>
+                <td>37陈文华</td>
+            </tr>
+            <tr>
+                <td>24袁鑫</td>
+            </tr>
+        </table>
+    </div>
+    </footer>
+</body>
+</html>
