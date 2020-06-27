@@ -18,7 +18,7 @@
     }	*/
 		/*header相关*/
 		#header{
-			height: 30px;
+			height: 60px;
 			background-color: red;
 		}
 		#header_main{
@@ -45,41 +45,13 @@
 		#container_main{
 			position: relative;
 		}
-		.search{
-			position: relative;
-			width:20%;
-			/*margin: 60px 20%;*/
-			background-color: green;
-		}
-		.search>input{
-			display: inline-block;
-    		width: 20%;
-    		height: 20px;
-    		font-size: 5px;
-    		border-radius: 20px 0 0 20px;
-    		border: rgba(62,124,208,0.60) solid 2px;
-    		border-right: none;
-    		outline: none;
-    		transition: all 0.4s ease 0s;
-		}
-		.search>input:hover{
-			border: rgba(62,124,208,1.00) solid 2px;
-    		border-right: none;
-    		background-color: rgba(182,182,182,0.55);
-		}
-		.search>input~button{
-			height: 20px;
-		    width: 30px;
-		    background-color: rgba(69,157,220,1.00);
-		    border-radius: 0 20px 20px 0;
-		    border: rgba(62,124,208,1.00) solid 2px;
-		    border-left: none;
-		    outline: none;
-		    transition: all 0.5s ease 0s;
-		}
-		.search>input~button:hover{
-    		cursor: pointer;
-    		background-color: 
+				/*others部分*/
+		.others{
+			height: 25%;
+			width: 70%;
+			display: relative;
+			margin: 10px auto;
+			background-color: black;
 		}
 
 		/*footer相关*/
