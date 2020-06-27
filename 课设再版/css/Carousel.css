@@ -1,26 +1,28 @@
     /*
-        æ¡†æ¶ç›’å­
-            ä½ç½®æœªå®š
-            å¤§å°å›ºå®š
+        ¿ò¼ÜºĞ×Ó
+            Î»ÖÃÎ´¶¨
+            ´óĞ¡¹Ì¶¨
      */
-   /* .banner_box {
-        max-width: 1600px;
-        min-width: 1200px;
+    .banner_box {
+        position: relative;
+        width: 40%;
+        height: 50%;
         margin: 0 auto;
-    }*/
+        background-color: green;
+    }
     
     /*
-        å·¦å³æŒ‰é’®
-            ç›¸å¯¹å®šä½
-            ç›´æ¥å›ºå®š
+        ×óÓÒ°´Å¥
+            Ïà¶Ô¶¨Î»
+            Ö±½Ó¹Ì¶¨
      */
     .banner_box .left_btn {
         position: relative;
-        top: -350px;
+        /*top: -30%;*/
         height: 100px;
         width: 80px;
         z-index: 10;
-        left:100px;
+        left:10%;
     }
 
     .banner_box ._left_btn:hover{
@@ -29,8 +31,8 @@
     .banner_box .right_btn {
         float: right;
         position: relative;
-        top: -350px;
-        right: 100px;
+        /*top: -30%;*/
+        right: 10%;
         height: 100px;
         width: 80px;
         z-index: 10;
@@ -40,14 +42,14 @@
     }*/
 
 
-    /*äºŒå±‚ç›’å­*/
+    /*¶ş²ãºĞ×Ó*/
     .box {
-        width: 1200px;
-        height: 455px;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
     }
     
-    /*ä¸‰å±‚ç›’å­ï¼šè½®æ’­å›¾*/
+    /*Èı²ãºĞ×Ó£ºÂÖ²¥Í¼*/
     .carousel{
         width: 100%;
         height: 100%;
@@ -59,15 +61,15 @@
         /**/
         overflow: hidden;
         position: absolute;
-        /*è®¾ç½®å˜åŒ–æ‰€éœ€æ—¶é—´*/
+        /*ÉèÖÃ±ä»¯ËùĞèÊ±¼ä*/
         transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
     }
 
     .carousel .img img{
-        /*calcå±æ€§ï¼Œé€šè¿‡è®¡ç®—ï¼ŒåŠ¨æ€æ˜¾ç¤ºå›¾ç‰‡å¤§å°*/
-        width: calc(95% - 14px);
-        height: calc(95% - 14px);
-        margin: 7px;
+        /*calcÊôĞÔ£¬Í¨¹ı¼ÆËã£¬¶¯Ì¬ÏÔÊ¾Í¼Æ¬´óĞ¡*/
+        width: calc(50% - 14px);
+        height: calc(90% - 14px);
+        margin: 5px;
     }
 
     .carousel .img1{
@@ -79,21 +81,21 @@
     }
     .carousel .img2{
         width: 500px;
-        height: 200px;
+        height: 80%;
         top: 20%;
-        left: -20%;
+        left: -15%;
         z-index: 2;
     }
     .carousel .img3{
-        width: 840px;
-        height: 340px;
+        width: 100%;
+        height: 100%;
         top: 10%;
-        left: 15%;
+        left: 25%;
         z-index: 3;
     }
     .carousel .img4{
         width: 500px;
-        height: 200px;
+        height: 80%;
         top: 20%;
         left: 60%;
         z-index: 2;

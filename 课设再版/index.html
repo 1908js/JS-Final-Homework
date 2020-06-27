@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/Carousel.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/Carousel.js"></script>
+</head>
+<body>
+	<!-- header部分 -->
+	<div id ="header">
+		<div id="header_main" class="main">
+			<div class="a">首页</div>
+			<div class="a">游戏</div>
+			<div class="a">下载/购买</div>
+			<div class="logo">logo</div>
+			<div class="a">新闻</div>
+			<div class="a">社交</div>
+			<div class="a">登录/注册</div>
+		</div>
+	</div>
+
+	<!-- container部分 -->
+	<div id ="container">
+		<div  id="container_main" class="main">
+			<div class="search">
+				<input type="text" value="没事搜一下">
+       	 		<button type="button" onClick="#">搜索</button>
+			</div>
+
+			<!-- Carousel第一层盒子 -->
+    		<div class="banner_box">
+        		<!-- 第二层盒子 -->
+       			<div class="box">
+        		<!-- 第三层盒子 -->
+            		<div class="carousel">
+            		    <!-- 轮播图片数量可变 -->
+            		    <div class="img">
+            		        <img src="img/Carousel/game1.jpg"/>
+            		    </div>
+            		    <div class="img">
+            		        <img src="img/Carousel/game2.jpg"/>
+            		    </div>
+            		    <div class="img">
+            		        <img src="img/Carousel/game3.jpg"/>
+            		    </div>
+            		</div>
+        		</div>
+        		<!-- <button class="left_btn" onclick="left()">left</button>
+            	<button class="right_btn" onclick="right()">right</button> -->
+			</div>
+				
+			<div class="others">
+				<div class="recommendation">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="news"></div>
+			</div>
+			
+		</div>
+	</div>
+	<div id ="footer"></div>
+</body>
+</html>
