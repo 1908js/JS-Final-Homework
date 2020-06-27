@@ -5,42 +5,12 @@
      */
     .banner_box {
         position: relative;
-        width: 40%;
+        width: 50%;
         height: 50%;
-        margin: 0 auto;
+        margin: 10px auto;
         background-color: green;
     }
     
-    /*
-        左右按钮
-            相对定位
-            直接固定
-     */
-    .banner_box .left_btn {
-        position: relative;
-        /*top: -30%;*/
-        height: 100px;
-        width: 80px;
-        z-index: 10;
-        left:10%;
-    }
-
-    .banner_box ._left_btn:hover{
-        cursor:pointer;
-    }
-    .banner_box .right_btn {
-        float: right;
-        position: relative;
-        /*top: -30%;*/
-        right: 10%;
-        height: 100px;
-        width: 80px;
-        z-index: 10;
-    }
-/*    .banner_box .right_btn:hover{
-        cursor:pointer;
-    }*/
-
 
     /*二层盒子*/
     .box {
