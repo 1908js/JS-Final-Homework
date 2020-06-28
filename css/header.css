@@ -1,0 +1,37 @@
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#header,#container,#footer{
+			width: 100%;
+		}
+		.main{
+			width: 60%;
+			height: 100%;
+			margin: 0 auto;
+			/*background-image: url(index_background.jpg);*/
+			/*background-color: white;*/
+		}
+		/*header设置*/
+		#header{
+			height: 60px;
+			background-color: red;
+		}
+		#header_main{
+			display: flex;
+			justify-content: space-between;
+			/* background: url(img/index_background.jpg); */
+		}
+		.a{
+			height: 100%;
+			width: 13%;
+			background-color: black;
+		}
+		.logo{
+
+			height: 100%;
+			width: 15%;
+			background-color: black;
+		}
+
