@@ -11,6 +11,11 @@
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/Carousel.js"></script>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: icomoon;
+    }
     #container{
         background:url(img/index_background.jpg)  no-repeat fixed center;
     }
@@ -19,19 +24,32 @@
         width: 100%;
         height: 100%;
     }*/
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .banner>div{
+        flex-grow: 1;
+        max-width: 200px;
+        height: 100px;
+        background-color: blue;
+    }
 </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- header部分 -->
     <div id ="header">
         <div id="header_main" class="main">
-            <div class="a">首页</div>
-            <div class="a">游戏</div>
-            <div class="a">下载/购买</div>
+            <div class="a">首页</div>
+            <div class="a">🐴游戏</div>
+            <div class="a">下载/购买</div>
             <div class="logo">logo</div>
-            <div class="a">新闻</div>
-            <div class="a">社交</div>
-            <div class="a">登录/注册</div>
+            <div class="a">新闻</div>
+            <div class="a">社交</div>
+            <div class="a">登录/注册</div>
         </div>
     </div>
 
@@ -48,7 +66,13 @@
                 <input type="text" value="没事搜一下">
                 <button type="button" >搜索</button>
             </div>
-
+            <div class="banner" style="background-color: red">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
 
 
 
@@ -88,12 +112,12 @@
 
             <div class="others">
                 <div class="recommendation">
-                    <div class="game"><img src="img/recommendation/game1.jpg" alt=""><a href=""></a></img></div>
-                    <div class="game"><img src="img/recommendation/game2.jpg" alt=""><a href=""></a></img></div>
-                    <div class="game"><img src="img/recommendation/game3.jpg" alt=""><a href=""></a></img></div>
-                    <div class="game"><img src="img/recommendation/game4.jpg" alt=""><a href=""></a></img></div>
-                    <div class="game"><img src="img/recommendation/game5.jpg" alt=""><a href=""></a></img></div>
-                    <div class="game"><img src="img/recommendation/game6.jpg" alt=""><a href=""></a></img></div>
+                    <div class="game"><img src="img/recommendation/game1.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><img src="img/recommendation/game2.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><img src="img/recommendation/game3.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><img src="img/recommendation/game4.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><img src="img/recommendation/game5.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><img src="img/recommendation/game6.jpg" alt=""><a href=""></a></div>
                 </div>
                 <div class="news"></div>
             </div>

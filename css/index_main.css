@@ -38,6 +38,7 @@
     }
     .search>input:hover{
         background-color: #9F9393;
+        color: white;
     }
     .search>button{
         flex-grow: 1;
@@ -49,6 +50,7 @@
     .search>button:hover{
         background-color: orange;
         cursor: pointer;
+        color: white;
     }
 	
 				/*others*/
