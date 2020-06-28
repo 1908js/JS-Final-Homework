@@ -1,4 +1,4 @@
-		/*ȫ������*/
+		/*È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		*{
 			margin: 0;
 			padding: 0;
@@ -10,13 +10,14 @@
 			width: 60%;
 			height: 100%;
 			margin: 0 auto;
-			background-color: white;
+			/*background-image: url(index_background.jpg);*/
+			/*background-color: white;*/
 		}
 /*		 body{
         display: flex;
         flex-flow: column nowrap;
     }	*/
-		/*header����*/
+		/*headerï¿½ï¿½ï¿½ï¿½*/
 		#header{
 			height: 60px;
 			background-color: red;
@@ -24,6 +25,7 @@
 		#header_main{
 			display: flex;
 			justify-content: space-between;
+			/* background: url(img/index_background.jpg); */
 		}
 		.a{
 			height: 100%;
@@ -38,16 +40,24 @@
 		}
 
 
-		/*container���*/
+		/*containerï¿½ï¿½ï¿½*/
 		#container{
 			height: 800px;
 			padding: 3% 0;
+			/*background:url(bg_flower.gif);*/
+			-moz-background-size:63px 100px; /* 老版本的 Firefox */
+			background-size:1000px 1000px;
+			background-repeat:no-repeat;
 			background-color: yellow;
+			background-image: url(index_background.jpg);
+			  
+			 display: block;
 		}
 		#container_main{
 			position: relative;
+
 		}
-			/*search���*/
+			/*searchï¿½ï¿½ï¿½*/
 	.search{
         width: 60%;
         height: 5%;

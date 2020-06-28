@@ -9,7 +9,14 @@
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/Carousel.js"></script>
 <style>
-    
+    #container{
+        background:yellow url(index_background.jpg)  no-repeat fixed center;
+    }
+    #container>img{
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 </head>
 <body>
@@ -28,6 +35,7 @@
 
     <!-- container部分 -->
     <div id ="container">
+        <!-- <img src="index_background.jpg" alt=""> -->
         <div  id="container_main" class="main">
 
 
@@ -36,7 +44,7 @@
         <!-- 搜索框 -->
             <div class="search">
                 <input type="text" value="没事搜一下">
-                <button type="button" onClick="#">搜索</button>
+                <button type="button" >搜索</button>
             </div>
 
 
