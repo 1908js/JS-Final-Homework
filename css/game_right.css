@@ -1,0 +1,109 @@
+ /*right-others*/
+    #Right{
+        order: 2;
+/*        height: 85%;*/
+        width: 20%;
+        background-color: whitesmoke;
+    }
+    #Right_top{
+        display: flex;
+        width: 100%;
+        height: 20%;
+    }
+.ra{
+     color: white;
+    text-decoration: none;
+}
+    #light{
+        width: 60px;
+        height: 200px;
+        background-color: rgba(0,0,0,0.59);
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+    }
+    .Right_others{
+        width: 200px;
+        height: 50px;
+        background-color: rgba(0,0,0,0.59);
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+.Right_others:hover{
+    color: aquamarine;
+}
+    #news{
+        display: flex;
+    }
+    #new>div{
+        width: 50%;
+        height: 30%;
+        background-color: yellow;
+    }
+    li{
+        list-style-type:none;
+    }
+
+         /*news_tab栏*/
+            .table_card>a {
+                 color:#111111;
+                text-decoration:none;
+                -webkit-transition:color 0.2s linear;
+                -moz-transition:color 0.2s linear;
+                -o-transition:color 0.2s linear;
+                transition:color 0.2s linear
+            }
+            .table_card>a:focus , .table_card>a:link, .table_card>a:active { outline:none}
+            .table_card>a:hover { color:#F30}
+            .table_card>ol, .table_card>ul, .table_card>li{ list-style: none}
+
+            .table_card { 
+                width:100%; 
+                margin:0 auto;
+                margin-top: 20px;
+            }
+            .table_card .tab { 
+                height:37px; 
+                font-size:14px; 
+                border-bottom:1px #e1e1e1 solid
+            }
+            .table_card .tab li {
+                float:left; 
+                height:36px; 
+                line-height:36px; 
+                padding:0 25px; 
+                margin-right:5px; 
+                background:#f0f0f0; 
+                border-top:1px #e1e1e1 solid; 
+                border-left:1px #e1e1e1 solid; 
+                border-right:1px #e1e1e1 solid;
+            }              
+            .table_card .tab li:hover { 
+                height:37px; background:#fff;
+                 color:#333; 
+                 cursor:pointer
+             }
+            .table_card .activ { 
+                height:37px !important;
+                 background:#fff !important; 
+                 color:#333
+             }
+.table_card .tabCon { 
+    background:#fff;
+     padding:15px; 
+     border-bottom:1px #e1e1e1 solid; 
+     border-left:1px #e1e1e1 solid;
+      border-right:1px #e1e1e1 solid;
+  }
+.table_card .tabCon div { 
+    display:none
+}
+.table_card .tabCon .on { 
+    display:block
+}
+
+.newslist01 { font-size:14px; }
+.newslist01 li { line-height:36px;}
+.newslist01 li .ding { color:#F30; margin-left:5px}

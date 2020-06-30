@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/index_main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/Carousel.css">
+    <link rel="stylesheet" href="css/news_tab.css">
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/Carousel.js"></script>
+    <script src="js/header_tab.js"></script>
+    <script src="js/game_news_lab.js"></script>
 <style>
     *{
         margin: 0;
@@ -19,23 +22,7 @@
     #container{
         background:url(img/index_background.jpg)  no-repeat fixed center;
     }
-   /* #container>img{
-        float: left;
-        width: 100%;
-        height: 100%;
-    }*/
-    .banner{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    .banner>div{
-        flex-grow: 1;
-        max-width: 200px;
-        height: 100px;
-        background-color: blue;
-    }
+    #n
 </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,42 +30,65 @@
     <!-- header部分 -->
     <div id ="header">
         <div id="header_main" class="main">
-            <div class="a">首页</div>
+            <a href="index.html" class="a">首页</a>
             <div class="a">🐴游戏</div>
             <div class="a">下载/购买</div>
-            <div class="logo">logo</div>
+            <div class="logo"></div>
             <div class="a">新闻</div>
             <div class="a">社交</div>
             <div class="a">登录/注册</div>
         </div>
+        <div id="lab">
+            <div>
+                <table class="head_table">
+                <tr>
+                    <td class="head_td"></td>
+                    <td class="head_td"><a href="飞机大战/index.html">飞机大战</a></td>
+                    <td class="head_td"><a href="404.html">游戏购买</a></td>
+                    <td class="head_td1"></td>
+                    <td class="head_td"><a href="404.html">新闻</a></td>
+                    <td class="head_td"><a href="404.html">社区热点</a></td>
+                    <td class="head_td"></td>
+                </tr>
+                <tr>
+                    <td class="head_td"></td>
+                    <td class="head_td"><a href="坦克大战/index.html">坦克大战</a></td>
+                    <td class="head_td"><a href="404.html">游戏下载</a></td>
+                    <td class="head_td1"></td>
+                    <td class="head_td"><a href="404.html">公告</a></td>
+                    <td class="head_td"><a href="404.html">社区首页</a></td>
+                    <td class="head_td"></td>
+                </tr>
+                <tr>
+                    <td class="head_td"></td>
+                    <td class="head_td"><a href="404.html">马里奥赛车</a></td>
+                    <td class="head_td"><a href="404.html">捐助我们</a></td>
+                    <td class="head_td1"></td>
+                    <td class="head_td"><a href="404.html">活动</a></td>
+                    <td class="head_td"></td>
+                    <td class="head_td"></td>
+                </tr>
+                <tr>
+                    <td class="head_td"></td>
+                    <td class="head_td"></td>
+                    <td class="head_td"></td>
+                    <td class="head_td1"></td>
+                    <td class="head_td"></td>
+                    <td class="head_td"></td>
+                    <td class="head_td"></td>
+                </tr>
+            </table>
+            </div>
+        </div>    
     </div>
-
     <!-- container部分 -->
     <div id ="container">
-        <!-- <img src="index_background.jpg" alt=""> -->
         <div  id="container_main" class="main">
-
-
-
-
         <!-- 搜索框 -->
             <div class="search">
-                <input type="text" value="没事搜一下">
-                <button type="button" >搜索</button>
+                <input type="text" value="&nbsp&nbsp没事搜一下">
+                <button type="button" style="color:#FFFFFF" >搜索</button>
             </div>
-            <div class="banner" style="background-color: red">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-            </div>
-
-
-
-
-
-
             <!-- Carousel第一层盒子 -->
             <div class="banner_box">
                 <!-- 第二层盒子 -->
@@ -87,61 +97,113 @@
                     <div class="carousel">
                         <!-- 轮播图片数量可变 -->
                         <div class="img">
-                            <img src="img/Carousel/game1.jpg" alt="连接丢失">
+                            <a href="plane game.html"><img src="img/Carousel/1.jpg" alt="连接丢失"></a>
                         </div>
                         <div class="img">
-                            <img src="img/Carousel/game2.jpg" alt="连接丢失">
+                            <a href="404.html"><img src="img/Carousel/2.jpg" alt="连接丢失"></a>
                         </div>
                         <div class="img">
-                            <img src="img/Carousel/game3.jpg" alt="连接丢失">
+                            <a href="tank game.html"><img src="img/Carousel/3.jpg" alt="连接丢失"></a>
                         </div>
                     </div>
-                </div>
-                <!-- <button class="left_btn" onclick="left()">left</button>
-                <button class="right_btn" onclick="right()">right</button> -->
+                </div>  
             </div>
-                
 
-
-
-
-
-
-
-
-
+            
             <div class="others">
                 <div class="recommendation">
-                    <div class="game"><img src="img/recommendation/game1.jpg" alt=""><a href=""></a></div>
-                    <div class="game"><img src="img/recommendation/game2.jpg" alt=""><a href=""></a></div>
-                    <div class="game"><img src="img/recommendation/game3.jpg" alt=""><a href=""></a></div>
-                    <div class="game"><img src="img/recommendation/game4.jpg" alt=""><a href=""></a></div>
-                    <div class="game"><img src="img/recommendation/game5.jpg" alt=""><a href=""></a></div>
-                    <div class="game"><img src="img/recommendation/game6.jpg" alt=""><a href=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game1.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game2.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game3.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game4.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game5.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game6.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game7.jpg" alt=""></a></div>
+                    <div class="game"><a href="404.html"><img src="img/recommendation/game8.jpg" alt=""></a></div>
                 </div>
-                <div class="news"></div>
-            </div>
-            
+                <!-- lab——news -->
+                <div id="news">
+                    <div class="table_card">
+                         <ul class="tab">
+                             <li class="activ">最新</li>
+                           <li>新闻</li>
+                         </ul>
+                        <div class="tabCon">
+                            <div class="on">
+                                <ul class="newslist01">
+                                    <li><a href="404.html"><span>【前端】</span>iframe实现关闭当前窗口效果<span class="ding">【置顶】</span></a></li>
+                                    <li><a href="404.html"><span>【前端】</span>div透明边框的设置及ie兼容<span class="ding">【置顶】</span></a></li>
+                                    <li><a href="404.html"><span>【福利】</span>你是我的好朋友，我要送你个天猫红包<span class="ding">【置顶】</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="newslist01">
+                                    <li>
+                                        <a href="404.html"><span>【前端】</span>可是姑娘，你为什么要编程呢？<span class="ding">【置顶】</span></a>
+                                    </li>
+                                    <li>
+                                       <a href="404.html">
+                                           <span>【前端】</span>知其所以然（以算法学习为例）<span class="ding">【置顶】</span>
+                                       </a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html">
+                                            <span>【福利】</span>如何给变量取个简短且无歧义的名字<span class="ding">【置顶】</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>        
         </div>
     </div>
-    <div id ="footer">
-        <div id="footer_others">
-            <div><a href="#">客服</a></div>
-            <div><a href="#">反馈</a></div>
-            <div><a href="#">关于</a></div>
+	<div class="footer">
+	    <div class="container">	
+	        <div class="left3">
+		        <dl>
+		            <dt><b style="color: rgba(101,101,101,1);">购买指南</b></dt>
+			        <dd><a href="404.html">免费注册</a></dd>
+			        <dd><a href="404.html">开通支付宝</a></dd>
+			        <dd><a href="404.html">支付宝充值</a></dd>
+			        <dd><a href="404.html"></a></dd>
+                    <dd><a href="404.html"><img src="images/页尾mall.png" alt="" width="111px"></a></dd>
+		        </dl>
+		        <dl>		
+		            <dt><b style="color: rgba(101,101,101,1);">GULU保障</b></dt>
+			        <dd><a href="404.html">发表保障</a></dd>
+			        <dd><a href="404.html">售后规定</a></dd>
+			        <dd><a href="404.html">误封赔付</a></dd>
+		        </dl>
+		        <dl>
+		            <dt><b style="color: rgba(101,101,101,1);">支付方式</b></dt>
+			        <dd><a href="404.html">快捷支付</a></dd>
+			        <dd><a href="404.html">信用卡</a></dd>
+			        <dd><a href="404.html">余额宝</a></dd>
+			        <dd><a href="404.html">蚂蚁花呗</a></dd>
+			        <dd><a href="404.html">货到付款</a></dd>
+		        </dl>
+		        <dl>
+		            <dt><b style="color: rgba(101,101,101,1);">商家服务</b></dt>	
+			        <dd><a href="404.html">GULU规划</a></dd>
+			        <dd><a href="404.html">商家入驻</a></dd>
+			        <dd><a href="404.html">商家中心</a></dd>
+			        <dd><a href="404.html">GULU智库</a></dd>
+			        <dd><a href="404.html">AI人工服务</a></dd>		
+		        </dl>
+		    </div>
+	        <div class="right">
+		        <p><b style="color: rgba(101,101,101,1);">GULU游戏</b></p>
+		    <img src="img/logo.png" alt="" class="erweina" width="180px;">
+		    </div>
+		</div>
+	    <div class="bottom">
+            <p class="t3">Copyright © 2001-2020 xx 2001@qq.com 版权所有</p>
+            <a href="404.html" class="t1">GULU游戏隐私政策</a>&#124;
+	        <a href="404.html" class="t2">GULU游戏用户协议</a>
+            <div id="q1"><a href="404.html" class="q2">制作人：网络1908班 袁鑫24 谭奕潇27 陈文华37 李宗逸6</a></div>  
         </div>
-        <div id="Introduction">
-            <div>
-                设计组
-                    陈文华
-                    袁鑫
-            </div>
-            <div>
-                技术组：
-                    谭奕潇
-                    李宗逸
-            </div>
-        </div>
-    </div>
+	</div>
 </body>
 </html>

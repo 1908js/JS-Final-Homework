@@ -1,15 +1,6 @@
 		/*container设置*/
 		#container{
-			height: 800px;
 			padding: 3% 0;
-			/*background:url(bg_flower.gif);*/
-			-moz-background-size:63px 100px; /* 老版本的 Firefox */
-			background-size:1000px 1000px;
-			background-repeat:no-repeat;
-			background-color: yellow;
-			background-image: url(index_background.jpg);
-			  
-			 display: block;
 		}
 		#container_main{
 			position: relative;
@@ -18,7 +9,7 @@
 			/*search设置*/
 	.search{
         width: 60%;
-        height: 5%;
+        height: 50px;
         position: relative;
         left: 20%;
         /*top: 10%;*/
@@ -27,55 +18,71 @@
         align-items: center;
     }
     .search>*{
-        height: 100%;
         outline: none;
     }
     .search>input{
         flex-grow: 2;
+        height: 50px;
         border-radius: 40px 0 0 40px;
-        border: skyblue solid 1px;
-        transition-duration: 0.5s;
+        border: black solid 2px;
+        border-right: none;
+        font-size: 30px;
+        letter-spacing: 2px;
     }
     .search>input:hover{
-        background-color: #9F9393;
-        color: white;
+        border: rgba(0,0,0,0.60) solid 2px;
+        border-right: none;
     }
     .search>button{
         flex-grow: 1;
+        height: 54px;
         border-radius: 0 40px 40px 0;
-        border: skyblue solid 1px;
-        background-color: deepskyblue;
-        transition-duration: 0.5s;
+        border: black solid 2px;
+        border-left: none;
+        background-color:black;
+        transition-duration: 0.3s;
     }
     .search>button:hover{
-        background-color: orange;
         cursor: pointer;
-        color: white;
+        background-color: rgba(0,0,0,0.62);
     }
 	
 				/*others*/
 		.others{
 			height: 30%;
-			width: 93%;
-			display: relative;
-			margin: 10px auto;
-			background-color: black;
+			width: 100%;
+			margin: 0.05% auto;
+            background-color: whitesmoke;
 		}
 		.others>.recommendation{
 			height: 100%;
-			width: 70%;
-			background-color: green;
-			padding-left: 3px;
+			width: 100%;
+			padding-left: 2px;
+            position: relative;
+            left: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
 		}
 		.recommendation>.game{
-			width: 32%;
+            flex-grow: 1;
 			height: 45%;
 			margin-top: 1%;
-			margin-left: 3px;
-			/*background-color: red;*/
 			display: inline-block;
+			border:2px #47EADD;
 		}
-		.game>img{
-			width: 100%;
-			height: 100%;
+.game:hover{
+    margin: 2px 2px 0 0;
+}
+		.game>a>img{
+			width: 250px;
+			height: 150px;
+		}
+.game>a>img:hover{
+    border: orange solid 2px;
+    box-shadow: 5px 5px 10px 10px black;
+}
+		.other>#news{
+			display: inline-block;
 		}

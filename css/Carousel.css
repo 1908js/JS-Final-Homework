@@ -1,25 +1,14 @@
-    /*
-        ¿ò¼ÜºÐ×Ó
-            Î»ÖÃÎ´¶¨
-            ´óÐ¡¹Ì¶¨
-     */
     .banner_box {
         position: relative;
         width: 100%;
-        height: 30%;
+        height: 60%;
         margin: 10px auto;
-        /*background-color:white;*/
     }
-    
-
-    /*¶þ²ãºÐ×Ó*/
     .box {
         width: 100%;
-        height: 100%;
+        height: 500px;
         margin: 0 auto;
     }
-    
-    /*Èý²ãºÐ×Ó£ºÂÖ²¥Í¼*/
     .carousel{
         width: 100%;
         height: 100%;
@@ -28,15 +17,12 @@
 
     }
     .carousel .img{
-        /**/
         overflow: hidden;
         position: absolute;
-        /*ÉèÖÃ±ä»¯ËùÐèÊ±¼ä*/
         transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
     }
 
     .carousel .img img{
-        /*calcÊôÐÔ£¬Í¨¹ý¼ÆËã£¬¶¯Ì¬ÏÔÊ¾Í¼Æ¬´óÐ¡*/
         width: calc(80% - 14px);
         height: calc(80% - 14px);
         margin: 5px;

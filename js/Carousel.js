@@ -1,6 +1,4 @@
-
     var imgNub;               //轮播图片数量
-
     $(function(){
         imgNub = $(".carousel .img").size();             //获取轮播图片数量
 
@@ -12,7 +10,6 @@
             根据轮播图片数量设定图片位置对应的class
             img3为中央展示位
             img2 && img 4分别为左右            
-
             初始化各各图位置
     */
         if(imgNub==1){
@@ -21,7 +18,6 @@
                 $(".carousel .img:eq("+i+")").addClass("img3");
             }
         }
-
         if(imgNub==2){
             //img 3、4
             for(i=0;i<imgNub;i++){
@@ -54,12 +50,6 @@
         setInterval("right()",3000);
     });
 
-
-        /*
-            获取当前的所有图片的相对位置，
-            通过改变图片在数组中的相对位置实现图片移动
-         */
-
     //右滑动
     function right(){
         var fy = [];
@@ -75,24 +65,6 @@
             }else{
                 //其他依次后移
                 $(".carousel .img[imgId="+i+"]").attr("class",fy[i-1]);
-            }
-        }
-    }
-
-
-    //左滑动
-    function left(){
-        var fy = [];
-        for(i=0;i<imgNub;i++){
-            fy[i]=$(".carousel .img[imgId="+i+"]").attr("class");
-        }
-        for(i=0;i<imgNub;i++){
-            if(i==(imgNub-1)){
-                //第一个->最后一个
-                $(".carousel .img[imgId="+i+"]").attr("class",fy[0]);
-            }else{
-                //其他依次前移
-                $(".carousel .img[imgId="+i+"]").attr("class",fy[i+1]);
             }
         }
     }
